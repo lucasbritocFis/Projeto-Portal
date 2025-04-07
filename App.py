@@ -30,3 +30,12 @@ st.markdown(f"""
         </button>
     </a>
 """, unsafe_allow_html=True)
+
+excel_path = r"\\10.50.90.18\Radioterapia\PORTAL-RADIOTERAPIA.xlsb"
+
+if st.button("Abrir Planilha Excel"):
+    try:
+        os.startfile(excel_path)
+        st.success("Arquivo aberto com sucesso!")
+    except Exception as e:
+        st.error(f"Erro ao abrir o arquivo: {e}")
