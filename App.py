@@ -26,7 +26,7 @@ citrix_url = "https://tasyprd.adhosp.com.br/#/login"
 st.markdown(f"""
     <a href="{citrix_url}" target="_blank">
         <button style='padding:10px 20px; font-size:16px; background-color:#4CAF50; color:white; border:none; border-radius:8px; cursor:pointer;'>
-            Abrir Citrix
+            Abrir "Tasy
         </button>
     </a>
 """, unsafe_allow_html=True)
