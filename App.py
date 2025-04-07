@@ -6,7 +6,7 @@ st.title("🖥️ Acesso Rápido - Portal Interno")
 st.markdown("### 💻 Abrir Citrix StoreWeb")
 
 # URL do Citrix
-citrix_url = "https://bronbsv004app.adhosp.com.br/Citrix/StoreWeb/"
+citrix_url = "http://bronbsv004app.adhosp.com.br/Citrix/StoreWeb/"
 
 # Botão com link
 st.markdown(f"""
