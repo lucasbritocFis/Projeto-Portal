@@ -20,7 +20,7 @@ st.markdown(f"""
 st.markdown("### 💻 Abrir Tasy")
 
 # URL do Citrix
-citrix_url = "https://tasyprd.adhosp.com.br/#/login
+citrix_url = "https://tasyprd.adhosp.com.br/#/login"
 
 # Botão com link
 st.markdown(f"""
