@@ -14,13 +14,16 @@ st.markdown("### 💻 Abrir Tasy")
 tasy_url = "https://tasyprd.adhosp.com.br/#/login"
 st.markdown(f"[Abrir Tasy]({tasy_url})", unsafe_allow_html=True)
 
-# Abrir planilha Excel
 st.markdown("### 📊 Abrir Planilha Excel (rede interna)")
-excel_path = r"\\10.50.90.18\Radioterapia\PORTAL-RADIOTERAPIA.xlsb"
 
-if st.button("Abrir Planilha Excel"):
-    try:
-        os.startfile(excel_path)  # Isso só funciona no Windows local
-        st.success("Arquivo aberto com sucesso!")
-    except Exception as e:
-        st.error(f"Erro ao abrir o arquivo: {e}")
+# Caminho da planilha (use \\ para Windows ou / para Linux se necessário)
+planilha_path = r"file://10.50.90.18/Radioterapia/PORTAL-RADIOTERAPIA.xlsb"
+
+# Link clicável para abrir a planilha
+st.markdown(f"""
+    <a href="{planilha_path}" target="_blank" style='text-decoration:none;'>
+        <button style='padding:10px 20px; font-size:16px; background-color:#4CAF50; color:white; border:none; border-radius:8px; cursor:pointer;'>
+            Abrir Planilha Excel
+        </button>
+    </a>
+""", unsafe_allow_html=True)
